@@ -1,16 +1,22 @@
-:root{
+:root {
   --color-primary: #3a0ca3;
   --color-secondary: #f72585;
-  --color-light: #F5F5F5;
+  --color-light: #f5f5f5;
   --color-dark: #323232;
   --text-bold: 700;
   --text-semibold: 600;
 }
 
-body {
+* {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: var(--color-light);
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--color-light);
+}
+
+a {
+  text-decoration: none;
 }
