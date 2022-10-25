@@ -14,3 +14,21 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.hidden-on-mobile {
+  display: none;
+}
+
+.hidden-on-desktop {
+  display: block;
+}
+
+@media (min-width: 1025px) {
+  .hidden-on-mobile {
+    display: flex!important;
+  }
+
+  .hidden-on-desktop {
+    display: none!important;
+  }
+}
