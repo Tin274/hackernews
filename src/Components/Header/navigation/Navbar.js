@@ -15,10 +15,10 @@ export default function Navbar() {
           <Navitem><JobIcon /></Navitem>
           <Navitem><QuestionIcon /></Navitem>
         </ul>
-        <div className="hidden-on-mobile searchbar-container">
+      </div>
+      <div className="hidden-on-mobile searchbar-container">
           <Searchbar  />
         </div>
-      </div>
     </nav>
   )
 }

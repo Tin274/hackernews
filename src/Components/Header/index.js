@@ -7,16 +7,16 @@ import Searchbar from "../Searchbar/Searchbar";
 
 export default function Header(){
   return (
-    <div>
-      <div className="header">
+<>
+      <header>
         <div className="header-container">
           <Logo />
           <Navbar />
         </div>
-      </div>
+      </header>
       <div className="hidden-on-desktop searchbar-mobile">
         <Searchbar />
       </div>
-    </div>
+</>
   )
 }
