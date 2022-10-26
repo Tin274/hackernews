@@ -1,0 +1,81 @@
+main {
+  width: calc(100vw - 80px);
+  margin: auto;
+  max-width: 1400px;
+}
+
+main article {
+  display: flex;
+  gap: 20px;
+  padding-block: 20px;
+  border-bottom: 2px solid var(--color-primary);
+}
+/* main article:last-of-type {
+  border-bottom: none;
+} */
+main h2 {
+  line-height: 1;
+  margin: 5px 0 15px;
+  text-overflow: ellipsis;
+}
+main .id {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  border-radius: 5px;
+  padding: 3px 9px;
+  height: min-content;
+  font-size: 1.2rem;
+  font-weight: var(--text-bold);
+}
+main .info-container {
+  width: 100%;
+}
+main .info-details {
+  margin-bottom: 10px;
+}
+main .info-details a,
+main .info-details p {
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 2px;
+}
+
+main .additional > div {
+  display: flex;
+  margin-bottom: 8px;
+}
+main .additional > div:last-of-type {
+  margin-bottom: 0;
+}
+
+main .additional a {
+  color: var(--color-secondary);
+  white-space: nowrap;
+}
+main .additional svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  main .details-outer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main .info-details {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main .additional {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    width: calc(100vw - 160px);
+  }
+}
