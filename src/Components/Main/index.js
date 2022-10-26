@@ -1,6 +1,6 @@
 import React from "react";
 import "./main.css";
-import Result from "./Result";
+import Result from "./Result/Result";
 
 export default function Main() {
   return (
