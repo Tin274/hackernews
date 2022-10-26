@@ -10,9 +10,9 @@ main article {
   padding-block: 20px;
   border-bottom: 2px solid var(--color-primary);
 }
-/* main article:last-of-type {
+main article:last-of-type {
   border-bottom: none;
-} */
+}
 main h2 {
   line-height: 1;
   margin: 5px 0 15px;
