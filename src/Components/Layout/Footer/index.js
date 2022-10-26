@@ -1,6 +1,6 @@
 import React from "react";
 import './footer.css';
-import Searchbar from "../Assets/Searchbar/Searchbar";
+import Searchbar from "../../Assets/Searchbar/Searchbar";
 import Logo from "../Header/Logo";
 import NavList from "./navigation/NavList";
 import Copyright from "./navigation/Copyright";

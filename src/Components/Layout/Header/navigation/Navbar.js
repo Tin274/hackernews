@@ -3,7 +3,7 @@ import Navitem from "./Navitem";
 import StoryIcon from "./StoryIcon";
 import JobIcon from "./JobIcon";
 import QuestionIcon from "./QuestionIcon";
-import Searchbar from "../../Assets/Searchbar/Searchbar";
+import Searchbar from "../../../Assets/Searchbar/Searchbar";
 
 
 export default function Navbar() {
