@@ -11,7 +11,7 @@ footer{
 }
 
 footer .logo{
-  margi-top: auto;
+  margin-top: auto;
 }
 
 .footer-container{
@@ -74,7 +74,7 @@ ul {
 @media (max-width: 1025px) {
   
   .hidden-on-mobile {
-    display: none!important;
+    display: none;
   }
   
   ul {
