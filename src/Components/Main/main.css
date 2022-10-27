@@ -1,7 +1,13 @@
 main {
-  width: calc(100vw - 80px);
+  width: calc(100vw - 160px);
   margin: auto;
   max-width: 1400px;
+  grid-area:content;
+  min-height: 75vh;
+}
+
+.loadingCircle {
+  text-align: center;
 }
 
 main article {
@@ -14,6 +20,7 @@ main article:last-of-type {
   border-bottom: none;
 }
 main h2 {
+  color: var(--color-primary);
   line-height: 1;
   margin: 5px 0 15px;
   text-overflow: ellipsis;

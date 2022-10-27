@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./main.css";
 import Result from "./Result/Result";
+import CircularProgress from '@mui/material/CircularProgress';
 
 export default function Main() {
 
@@ -35,7 +36,9 @@ export default function Main() {
 
   if(isLoading){
     return(
-      <h1>Articles are loading...</h1>
+      <main className="loadingCircle">
+        <CircularProgress color="secondary" />
+      </main>
     )
   };
   

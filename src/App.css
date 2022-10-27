@@ -27,7 +27,9 @@ ul{
 
 @media (min-width: 1025px) {
   .hidden-on-mobile {
-    display: flex!important;
+  
+    width: 600px;
+    justify-content: flex-end;
   }
 
   .hidden-on-desktop {

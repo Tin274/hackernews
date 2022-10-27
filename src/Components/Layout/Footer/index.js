@@ -10,14 +10,10 @@ export default function Footer(){
     return(
         <footer>
           <div className="footer-container">
-
-          
-
             <Logo />
-
             <div className="footer-additional">
               <div className="search-container">
-              <Searchbar className="hidden-on-mobile"/>
+                <Searchbar />
               </div>
               <div className="nav-container">
                 <NavList />
@@ -25,20 +21,6 @@ export default function Footer(){
               </div>
             </div>
           </div>
-        
-
-
-
-
-
-          {/* <div className="footer-container">
-          <Logo />
-            <NavList />
-            <div className="copyright-container">
-              <Searchbar className="hidden-on-mobile"/>
-              <Copyright />
-            </div>
-          </div> */}
         </footer>
     )
 }
