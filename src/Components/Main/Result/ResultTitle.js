@@ -1,9 +1,14 @@
 import React from "react";
 
-export default function ResultTitle() {
+export default function ResultTitle({ setModalOpen, modalOpen }) {
+  function toggleModal() {
+    setModalOpen((modalOpen = !modalOpen));
+    console.log(modalOpen);
+  }
+
   return (
-    <a href="#">
-      <h2 className="title">Titel von Artikel</h2>
-    </a>
+    <h2 onClick={toggleModal} className="title">
+      Titel von Artikel
+    </h2>
   );
 }
