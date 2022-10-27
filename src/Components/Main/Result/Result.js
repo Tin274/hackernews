@@ -4,21 +4,23 @@ import ResultInfoDetails from "./ResultInfoDetails";
 import ResultRating from "./ResultRating";
 import ResultComments from "./ResultComments";
 
-export default function Result() {
+export default function Result({article}) {
+
   return (
     <article>
-      <div className="id">1</div>
+      <div className="id"></div>
       <div className="details-outer">
         <div className="info-container">
-          <ResultTitle />
-          <ResultInfoDetails />
+          <ResultTitle title={article.title}/>
+          <ResultInfoDetails title={article.title} created={article.created_at} url={article.url} author={article.author}/>
         </div>
         <div className="additional">
-          <ResultRating />
+          <ResultRating points={article.points}/>
 
-          <ResultComments />
+          <ResultComments comments={article.num_comments}/>
         </div>
       </div>
     </article>
   );
 }
+

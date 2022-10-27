@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function ResultTitle() {
+export default function ResultTitle({title}) {
   return (
-    <a href="#">
-      <h2 className="title">Titel von Artikel</h2>
-    </a>
+      <h2 className="title">
+        {title}
+      </h2>
   );
 }

@@ -39,7 +39,7 @@ export default function Main() {
     <main>
       <div className="modal">
         <dialog>
-          <iframe src="" frameborder="0"></iframe>
+          <iframe src="" frameBorder="0"></iframe>
         </dialog>
         <section className="results">{articleList}</section>
       </div>

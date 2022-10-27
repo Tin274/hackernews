@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ResultRating() {
+export default function ResultRating({points}) {
   return (
     <div className="rating-container">
 <<<<<<< HEAD
@@ -24,7 +24,7 @@ export default function ResultRating() {
                 </svg>
 >>>>>>> 7452d9e160d8b4e2ff13cc5c2c7a98687e37ee5b
       <a href="#" className="rating">
-        144 Points
+        {points}
       </a>
     </div>
   );
