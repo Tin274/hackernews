@@ -21,9 +21,9 @@ export default function Main() {
    useEffect(()=>{
     
     if(articles){
-      setArticleList(articles.hits.map((article) => {
+      setArticleList(articles.hits.map((article, index) => {
         return (
-          <Result key={article.objectID} article={article}/>
+          <Result key={article.objectID} article={article} index={index} />
         )
       })) 
       setIsLoading(false)
