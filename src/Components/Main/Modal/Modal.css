@@ -1,0 +1,35 @@
+main {
+  position: relative;
+}
+
+.modal-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+}
+
+dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  pointer-events: all;
+  width: 90%;
+  height: 80%;
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.35);
+}
+dialog button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.5rem;
+  line-height: 1;
+  background-color: unset;
+  border: none;
+}
+dialog button:hover {
+  cursor: pointer;
+}
