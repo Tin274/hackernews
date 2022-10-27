@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ResultComments() {
+export default function ResultComments({ comments }) {
   return (
     <div className="comments-container">
       <svg
@@ -16,7 +16,7 @@ export default function ResultComments() {
         ></path>
       </svg>
       <a href="#" className="comments">
-        3 Comments
+        {comments}
       </a>
     </div>
   );
