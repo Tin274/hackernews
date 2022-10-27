@@ -1,7 +1,7 @@
 import React from "react";
 import "./Modal.css";
 
-export default function Modal({ modalOpen, setModalOpen }) {
+export default function Modal({ modalOpen, setModalOpen, iframeUrl }) {
   function closeModal() {
     setModalOpen((modalOpen = !modalOpen));
     console.log(modalOpen);
@@ -11,7 +11,7 @@ export default function Modal({ modalOpen, setModalOpen }) {
     <div className="modal-container">
       <dialog open={modalOpen}>
         <button onClick={closeModal}>X</button>
-        <iframe src="" frameborder="0"></iframe>
+        <iframe src={iframeUrl} frameborder="0"></iframe>
       </dialog>
     </div>
   );

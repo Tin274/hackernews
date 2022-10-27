@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ResultTitle from "./ResultTitle";
 import ResultInfoDetails from "./ResultInfoDetails";
 import ResultRating from "./ResultRating";
 import ResultComments from "./ResultComments";
 
-export default function Result({ article, setModalOpen, modalOpen }) {
+export default function Result({
+  article,
+  setModalOpen,
+  modalOpen,
+  setIframeUrl,
+}) {
   return (
     <article>
       <div className="id"></div>
@@ -14,6 +19,8 @@ export default function Result({ article, setModalOpen, modalOpen }) {
             setModalOpen={setModalOpen}
             modalOpen={modalOpen}
             title={article.title}
+            url={article.url}
+            setIframeUrl={setIframeUrl}
           />
           <ResultInfoDetails
             title={article.title}
