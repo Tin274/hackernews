@@ -22,7 +22,7 @@ export default function Main() {
     if(articles){
       setArticleList(articles.hits.map((article) => {
         return (
-          <Result key={article.id} article={article}/>
+          <Result key={article.objectID} article={article}/>
         )
       })) 
       setIsLoading(false)
@@ -43,7 +43,7 @@ export default function Main() {
     <main>
       <div className="modal">
         <dialog>
-          <iframe src="" frameborder="0"></iframe>
+          <iframe src="" frameBorder="0"></iframe>
         </dialog>
         <section className="results">
 

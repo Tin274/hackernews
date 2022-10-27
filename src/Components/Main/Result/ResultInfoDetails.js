@@ -1,11 +1,22 @@
 import React from "react";
 
-export default function ResultInfoDetails() {
+export default function ResultInfoDetails({title, created, author, url}) {
+
+  // const startDateTime = {created};
+  // const timeNow = startDateTime.getTime();
+
+  // let newDate = new Date();
+  // let newDateNow = newDate.getTime();
+
+  // let timer;
+
+  // function updateClock
+
   return (
     <div className="info-details">
-      <p>20hours ago</p>
-      <a href="#">quelle</a>
-      <a href="#">Author</a>
+      <p>{created}</p>
+      <a href={url} title={title} target="blank" > Zum Artikel </a>
+      <p>Autor: {author} </p>
     </div>
   );
 }
