@@ -3,6 +3,7 @@ import "./main.css";
 import Result from "./Result/Result";
 import CircularProgress from "@mui/material/CircularProgress";
 import Modal from "./Modal/Modal";
+import BackToTopButton from "../Assets/BackToTopButton./BackToTopButton";
 
 export default function Main() {
   const url = "https://hn.algolia.com/api/v1/search?query=&tags=front_page";
@@ -64,6 +65,7 @@ export default function Main() {
         iframeUrl={iframeUrl}
       />
       <section className="results">{articleList}</section>
+      <BackToTopButton />
     </main>
   );
 }

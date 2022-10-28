@@ -12,8 +12,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
-ul{
+ul {
   padding-inline-start: 0;
 }
 
@@ -27,13 +30,12 @@ ul{
 
 @media (min-width: 1025px) {
   .hidden-on-mobile {
-  
     width: 600px;
     justify-content: flex-end;
   }
 
   .hidden-on-desktop {
-    display: none!important;
+    display: none !important;
   }
 }
 
@@ -45,4 +47,3 @@ body {
 a {
   text-decoration: none;
 }
-

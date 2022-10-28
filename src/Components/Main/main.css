@@ -1,5 +1,5 @@
 main {
-  width: calc(100vw - 160px);
+  width: calc(100vw - 80px);
   margin: auto;
   max-width: 1400px;
   grid-area: content;
@@ -75,6 +75,7 @@ main .additional svg {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    gap: 10px;
   }
   main .info-details {
     display: flex;
