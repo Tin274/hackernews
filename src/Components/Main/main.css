@@ -4,6 +4,7 @@ main {
   max-width: 1400px;
   grid-area: content;
   min-height: 75vh;
+  padding-block: 20px;
 }
 
 span.MuiCircularProgress-root {
