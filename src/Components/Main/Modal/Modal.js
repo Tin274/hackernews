@@ -11,7 +11,7 @@ export default function Modal({ modalOpen, setModalOpen, iframeUrl }) {
     <div className="modal-container">
       <dialog open={modalOpen}>
         <button onClick={closeModal}>X</button>
-        <iframe src={iframeUrl} frameborder="0"></iframe>
+        <iframe src={iframeUrl} frameBorder="0"></iframe>
       </dialog>
     </div>
   );

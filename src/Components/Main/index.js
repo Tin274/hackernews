@@ -47,7 +47,6 @@ export default function Main({ searchTerm }) {
 
   useEffect(() => {
     fetchArticles();
-    console.log(searchTerm);
   }, [searchTerm]);
 
   if (isLoading) {

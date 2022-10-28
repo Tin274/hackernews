@@ -7,8 +7,7 @@ import Searchbutton from "../../Assets/Searchbar/searchitems/Searchbutton";
 import Searchinput from "../../Assets/Searchbar/searchitems/Searchinput";
 
 export default function Header({ setSearchTerm }) {
-  console.log("header", setSearchTerm);
-
+  
   return (
     <>
       <header id="top">
