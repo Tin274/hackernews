@@ -4,15 +4,17 @@ import ResultInfoDetails from "./ResultInfoDetails";
 import ResultRating from "./ResultRating";
 import ResultComments from "./ResultComments";
 
+
 export default function Result({
   article,
   setModalOpen,
   modalOpen,
   setIframeUrl,
+  index
 }) {
   return (
     <article>
-      <div className="id"></div>
+      <div className="id">{index + 1}</div>
       <div className="details-outer">
         <div className="info-container">
           <ResultTitle
