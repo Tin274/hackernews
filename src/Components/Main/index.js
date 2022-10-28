@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./main.css";
 import Result from "./Result/Result";
-import CircularProgress from '@mui/material/CircularProgress';
+import CircularProgress from "@mui/material/CircularProgress";
 import Modal from "./Modal/Modal";
-
 
 export default function Main() {
   const url = "https://hn.algolia.com/api/v1/search?query=&tags=front_page";
@@ -17,11 +16,13 @@ export default function Main() {
 
   async function fetchArticles() {
     setIsLoading(true);
+    // timeout to test spinner
+    // setTimeout(async () => {
     const response = await fetch(url);
     const data = await response.json();
     setArticles(data);
+    // }, 3000);
   }
-
 
   useEffect(() => {
     if (articles) {
@@ -47,14 +48,13 @@ export default function Main() {
     fetchArticles();
   }, []);
 
-
-  if(isLoading){
-    return(
+  if (isLoading) {
+    return (
       <main className="loadingCircle">
         <CircularProgress color="secondary" />
       </main>
-    )
-  };
+    );
+  }
 
   return (
     <main>
