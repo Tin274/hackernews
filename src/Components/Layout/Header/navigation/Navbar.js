@@ -5,20 +5,25 @@ import JobIcon from "./JobIcon";
 import QuestionIcon from "./QuestionIcon";
 import Searchbar from "../../../Assets/Searchbar/Searchbar";
 
-
-export default function Navbar() {
-  return(
+export default function Navbar({ setSearchTerm }) {
+  return (
     <nav className="navigation">
       <div className="navigation-container">
         <ul className="navlist">
-          <Navitem><StoryIcon /></Navitem>
-          <Navitem><JobIcon /></Navitem>
-          <Navitem><QuestionIcon /></Navitem>
+          <Navitem>
+            <StoryIcon />
+          </Navitem>
+          <Navitem>
+            <JobIcon />
+          </Navitem>
+          <Navitem>
+            <QuestionIcon />
+          </Navitem>
         </ul>
       </div>
       <div className="hidden-on-mobile searchbar-container">
-          <Searchbar  />
-        </div>
+        <Searchbar setSearchTerm={setSearchTerm} />
+      </div>
     </nav>
-  )
+  );
 }

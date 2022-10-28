@@ -3,11 +3,9 @@ import "./main.css";
 import Result from "./Result/Result";
 import CircularProgress from "@mui/material/CircularProgress";
 import Modal from "./Modal/Modal";
-import BackToTopButton from "../Assets/BackToTopButton./BackToTopButton";
+import BackToTopButton from "../Assets/BackToTopButton/BackToTopButton";
 
-export default function Main() {
-  const url = "https://hn.algolia.com/api/v1/search?query=&tags=front_page";
-
+export default function Main({ searchTerm }) {
   const [articles, setArticles] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const [articleList, setArticleList] = useState([]);
@@ -15,14 +13,16 @@ export default function Main() {
   const [modalOpen, setModalOpen] = useState(false);
   const [iframeUrl, setIframeUrl] = useState("");
 
+  const url = `https://hn.algolia.com/api/v1/search?query=${searchTerm}`;
+
   async function fetchArticles() {
     setIsLoading(true);
     // timeout to test spinner
-    // setTimeout(async () => {
-    const response = await fetch(url);
-    const data = await response.json();
-    setArticles(data);
-    // }, 3000);
+    setTimeout(async () => {
+      const response = await fetch(url);
+      const data = await response.json();
+      setArticles(data);
+    }, 3000000);
   }
 
   useEffect(() => {
@@ -47,7 +47,8 @@ export default function Main() {
 
   useEffect(() => {
     fetchArticles();
-  }, []);
+    console.log(searchTerm);
+  }, [searchTerm]);
 
   if (isLoading) {
     return (
