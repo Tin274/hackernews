@@ -22,7 +22,7 @@ export default function Main({ searchTerm }) {
       const response = await fetch(url);
       const data = await response.json();
       setArticles(data);
-    }, 3000000);
+    }, 300);
   }
 
   useEffect(() => {
