@@ -3,17 +3,17 @@ main {
   margin: auto;
   max-width: 1400px;
   grid-area: content;
-  min-height: 75vh;
+  min-height: calc(100vh - 220px);
   padding-block: 20px;
 }
 
 span.MuiCircularProgress-root {
-  height: 60px;
-  width: 60px;
+  height: 60px !important;
+  width: 60px !important;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%, -50%, 0);
+  transform: translate(-50%, -50%, 0);
 }
 
 main article {

@@ -1,15 +1,15 @@
-import React from 'react';
-import Header from './Header/index';
-import Footer from './Footer/index';
+import React from "react";
+import Header from "./Header/index";
+import Footer from "./Footer/index";
 
-export default function Layout({ children }) {
-    return (
-        <>
-            <Header />
+export default function Layout({ children, setSearchTerm }) {
+  return (
+    <>
+      <Header setSearchTerm={setSearchTerm} />
 
-            {children}
+      {children}
 
-            <Footer />
-        </>
-    )
+      <Footer setSearchTerm={setSearchTerm} />
+    </>
+  );
 }
